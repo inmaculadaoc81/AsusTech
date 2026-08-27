@@ -1,10 +1,11 @@
 
 :root{--b:#0758a8;--b2:#0a1631;--sky:#eef6ff;--line:#d8e4ef;--muted:#617084;--g:#25D366}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;color:#0b1730;line-height:1.55}a{text-decoration:none;color:inherit}.wrap{width:min(1180px,92%);margin:auto}
-header{position:sticky;top:0;z-index:9000;background:#fff;border-bottom:1px solid var(--line)}.nav{height:80px;display:flex;align-items:center;justify-content:space-between}.logo{height:48px}.links{display:flex;gap:20px;font-size:14px;font-weight:800;align-items:center}.calltop{background:var(--b2);color:#fff;padding:11px 15px;border-radius:999px;white-space:nowrap}.menu-btn{display:none;border:1px solid var(--line);background:#fff;color:var(--b2);border-radius:11px;padding:10px 14px;font-weight:900;font:inherit;cursor:pointer}
-#mobileMenu{display:none}
-#mobileMenu:not([hidden]){display:block}
-#mobileMenu a{font-weight:800;color:var(--b2)}
+header{position:sticky;top:0;z-index:9000;background:#fff;border-bottom:1px solid var(--line)}.nav{height:80px;display:flex;align-items:center;justify-content:space-between}.logo{height:48px;max-width:220px;object-fit:contain}.links{display:flex;gap:20px;font-size:14px;font-weight:800;align-items:center}.calltop{background:var(--b2);color:#fff;padding:11px 15px;border-radius:999px;white-space:nowrap}.menu-btn{display:none;border:1px solid var(--line);background:#fff;color:var(--b2);border-radius:11px;padding:10px 14px;font-weight:900;font:inherit;cursor:pointer}
+.mobile-menu{display:none;flex-direction:column;background:#fff;border-top:1px solid var(--line)}
+.mobile-menu:not([hidden]){display:flex}
+.mobile-menu a{display:block;color:var(--b2);text-decoration:none;font-weight:800;padding:14px 20px;border-bottom:1px solid var(--line)}
+.mobile-menu a:last-child{border-bottom:none}
 .seo-content{background:var(--sky)}
 .seo-text{max-width:880px}
 .seo-text p{color:var(--muted);font-size:16px;line-height:1.7;margin:0 0 18px}
@@ -17,4 +18,4 @@ section{padding:78px 0}.title{font-size:clamp(33px,4vw,50px);line-height:1.05;le
 .contact{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px}form{display:grid;grid-template-columns:1fr 1fr;gap:12px}.full{grid-column:1/-1}input,textarea,select{padding:14px;border:1px solid #cdd8e3;border-radius:10px;font:inherit;width:100%}textarea{min-height:140px}.submit{border:0;background:var(--b);color:#fff;padding:15px;border-radius:11px;font-weight:900}.map{width:100%;height:390px;border:0;border-radius:22px}
 footer{background:var(--b2);color:#fff;padding:32px 0}.footer{display:flex;justify-content:space-between;gap:25px;align-items:center}.footer img{height:40px}.float-wa{position:fixed;right:22px;bottom:22px;z-index:10020;width:62px;height:62px;border-radius:50%;background:var(--g);display:grid;place-items:center;color:#fff;font-weight:900}
 #n8n-chat .chat-window-toggle,#n8n-chat [class*="chat-window-toggle"]{position:fixed!important;right:22px!important;bottom:96px!important;z-index:10060!important;border:1px solid #fff!important}#n8n-chat .chat-window,#n8n-chat [class*="chat-window"]{position:fixed!important;right:22px!important;bottom:166px!important;z-index:10100!important;max-height:calc(100vh - 190px)!important}
-@media(max-width:900px){.links{display:none}.menu-btn{display:block}.hero-grid,.data-grid,.contact{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.problems,.steps-grid{grid-template-columns:repeat(2,1fr)}.trust{grid-template-columns:1fr}}@media(max-width:600px){.wrap{width:calc(100% - 28px)}h1{font-size:48px}.grid,.problems,.steps-grid,.ctas,form{grid-template-columns:1fr}.phone,.full{grid-column:auto}.hero:after{display:none}.cal{height:760px}.footer{flex-direction:column;align-items:flex-start}}
+@media(max-width:900px){.links{display:none}.menu-btn{display:block}.hero-grid,.data-grid,.contact{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.problems,.steps-grid{grid-template-columns:repeat(2,1fr)}.trust{grid-template-columns:1fr}}@media(max-width:600px){.wrap{width:calc(100% - 28px)}h1{font-size:48px}.logo{height:34px;max-width:160px}.nav{height:66px}.grid,.problems,.steps-grid,.ctas,form{grid-template-columns:1fr}.phone,.full{grid-column:auto}.hero:after{display:none}.cal{height:760px}.footer{flex-direction:column;align-items:flex-start}}

@@ -35,3 +35,18 @@ REVISIÓN (fixes aplicados en esta pasada):
   funciona. Lo revisamos y te damos soluciones." Tamaño del H1
   aumentado: clamp(38-56px) → clamp(46-74px) en escritorio, 39px →
   48px en móvil.
+
+REVISIÓN ADICIONAL — 3 BUGS REALES (a petición del cliente):
+- Logo demasiado grande en móvil: .logo solo tenía height:48px fijo,
+  sin límite de ancho ni reducción específica en móvil. Añadido
+  max-width:220px en general y, en el breakpoint ≤600px, reducido a
+  height:34px;max-width:160px (además de bajar la altura del header
+  de 80px a 66px en ese breakpoint).
+- El panel #mobileMenu no usaba ningún estilo real (mismo bug
+  encontrado en LenovoTech): era un div con solo padding/background
+  inline, sin bloques por enlace, así que al abrirlo los enlaces
+  aparecían como texto plano separado por "·". Reescrito con la clase
+  .mobile-menu estándar de la familia.
+- El botón flotante de WhatsApp (.float-wa) mostraba el texto "WA" en
+  vez del icono SVG estándar de WhatsApp usado en el resto de la
+  familia. Sustituido por el SVG correcto.
