@@ -50,3 +50,24 @@ REVISIÓN ADICIONAL — 3 BUGS REALES (a petición del cliente):
 - El botón flotante de WhatsApp (.float-wa) mostraba el texto "WA" en
   vez del icono SVG estándar de WhatsApp usado en el resto de la
   familia. Sustituido por el SVG correcto.
+
+REVISIÓN ADICIONAL (checklist unificado de la familia, a petición del cliente):
+- H1 repetía la plantilla "no funciona. Lo revisamos..." usada en
+  varios repos. Reescrito: "Tu Asus se cuelga o no enciende. Aquí lo
+  arreglamos." (10 palabras).
+- BUG REAL — texto decorativo ".art:before" ("TUS DATOS", 80px) en la
+  sección de protección de datos no tenía reducción de tamaño en
+  móvil/tablet, mismo problema visto en MedionTech ("HARDWARE").
+  Añadida reducción (60px tablet, 42px móvil).
+- BUG REAL — el formulario no tenía ninguna casilla de consentimiento
+  de política de privacidad (solo existía el enlace en el banner de
+  cookies, no ligado al formulario). Añadida, con enlace a
+  https://kelatos.com/privacy-policy/ en azul y subrayado.
+- Añadido "Sábados, domingos y días festivos estamos cerrados" debajo
+  del horario.
+- Añadida franja de aviso de servicio técnico independiente debajo
+  del menú (no existía).
+- Ninguno de los botones CTA del hero (WhatsApp ni teléfono) tenía
+  icono. Añadidos ambos (SVG estándar de la familia).
+- Formulario verificado: fetch a /api/contacto coincide con
+  api/contacto.js; conexión correcta.
